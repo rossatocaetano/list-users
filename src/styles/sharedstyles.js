@@ -4,7 +4,7 @@ import { Palette } from './theme';
 export const Container = styled.div`
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     min-height: 100vh;
     padding: 2rem 0;
     background-color: ${Palette.backgroundColor};
