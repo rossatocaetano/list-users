@@ -11,6 +11,9 @@ export const Container = styled.div`
     @media (min-width: ${ScreenSizes.tablet}){
         padding: 3rem 0;
     }
+    @media (min-width: ${ScreenSizes.desktop}){
+        padding: 4rem 0;
+    }
 `
 
 export const Main = styled.main`
@@ -31,5 +34,8 @@ export const Title = styled.h1`
     @media (min-width: ${ScreenSizes.tablet}) {
         font-size: 2.5rem;
         padding: 0 2rem;
+    }
+    @media (min-width: ${ScreenSizes.desktop}){
+        font-size: 3rem;
     }
 `

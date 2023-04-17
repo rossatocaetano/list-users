@@ -28,7 +28,7 @@ export default function Home({ users }) {
               <CardImage src={user.picture.large} alt={`Foto de ${user.name.first} ${user.name.last}`} />
               <CardItens>
                 <CardMainInfo>{user.name.first} {user.name.last}</CardMainInfo>
-                <p>&#128231; <a href={`mailto:${user.email}`} target='_blank'>{user.email}</a></p>
+                <p>&#128231; <a href={`mailto:${user.email}`}>{user.email}</a></p>
                 <p>Login: {user.login.username} </p>                
                 <p>Gênero: {user.gender}</p>
                 <p>Localização: {user.location.street.name}, {user.location.city}, {user.location.state} {user.location.country}</p>
