@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Palette } from './theme';
+import { Palette, ScreenSizes } from './theme';
 
 export const Container = styled.div`
     display: flex;
@@ -8,13 +8,19 @@ export const Container = styled.div`
     min-height: 100vh;
     padding: 2rem 0;
     background-color: ${Palette.backgroundColor};
+    @media (min-width: ${ScreenSizes.tablet}){
+        padding: 3rem 0;
+    }
 `
 
 export const Main = styled.main`
     display: flex;
     padding: 0 .5rem;
     margin: .5rem 0;
-    flex-direction: column;    
+    flex-direction: column;
+    @media (min-width: ${ScreenSizes.tablet}){
+        padding: 0 5rem;
+    }
 `
 
 export const Title = styled.h1`
@@ -22,4 +28,8 @@ export const Title = styled.h1`
     font-weight: bold;
     padding: 0 1.5rem;
     color: ${Palette.fontColor};
+    @media (min-width: ${ScreenSizes.tablet}) {
+        font-size: 2.5rem;
+        padding: 0 2rem;
+    }
 `

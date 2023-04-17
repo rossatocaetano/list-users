@@ -4,3 +4,10 @@ export const Palette = {
     "firstColor" : "rgba(238, 123, 48, 1)",
     "secondColor" : "rgba(140, 39, 30, 1)",
 }
+
+export const ScreenSizes = {
+    "mobile": "375px",
+    "tablet": "768px",
+    "desktop": "1024px",
+};
+  

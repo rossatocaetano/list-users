@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Palette } from "./theme";
+import { Palette, ScreenSizes } from "./theme";
 
 export const Card = styled.li`
     //border: 1px solid green;
@@ -10,6 +10,9 @@ export const Card = styled.li`
     flex-wrap: nowrap;
     margin: 2rem 0;
     color: ${Palette.fontColor};
+    @media (min-width: ${ScreenSizes.tablet}){
+        margin: 3rem 0;
+    }
 `
 
 export const CardImage = styled.img`
@@ -33,6 +36,9 @@ export const CardItens = styled.div`
            text-decoration: underline;
         }
     }
+    @media (min-width: ${ScreenSizes.tablet}){
+        font-size: 1rem;
+    }
 `
 
 export const CardMainInfo = styled.h1`
@@ -40,5 +46,8 @@ export const CardMainInfo = styled.h1`
     margin-bottom: .2rem;
     color: ${Palette.firstColor};
     font-weight: bold;
+    @media (min-width: ${ScreenSizes.tablet}){
+        font-size: 1.75rem;
+    }
 `
 
